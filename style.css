@@ -1,0 +1,31 @@
+.container {
+    display: flex;
+    gap: 10px;
+}
+.card {
+    top: 25px;
+    left: 50%;
+    transform: translateX(50%);
+}
+.border-right {
+    bottom: 600px;
+    left: 50px;
+    width: 1000px;
+    height: 10%;
+        background-color: rgb(140, 225, 90);
+    position: absolute;
+}
+.zelText {
+    top: 265px;
+    left: 0px;
+    transform: translateX(100%);
+    position: absolute;
+}
+.Negr {
+    bottom: 317.85px;
+    left: 50px;
+    width: 1000px;
+    height: 30%;
+        background-color: black;
+    position: absolute;
+}
