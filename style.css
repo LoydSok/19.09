@@ -2,30 +2,130 @@
     display: flex;
     gap: 10px;
 }
+
 .card {
-    top: 25px;
-    left: 50%;
-    transform: translateX(50%);
+    width: 6cm;
+    height: 8.5cm;
+    background-color: green;
+    position: relative;
+    overflow: hidden;
 }
+@font-face {
+        font-family: "card_text";
+        src: url("Tektur-VariableFont_wdth,wght.ttf");
+    }
+    body {
+        font-family: 'card_text', sans-serif;
+    }
+#text1 {
+    top: 0;
+    left: -2.5px;
+    width: 100%;
+    height: 10px;
+    margin-block-start: 0.25em;
+    padding: 5px 5px 5px 5px;
+}
+
+
+p {
+    position: absolute;
+    z-index: 1;
+    font-size: 14px;
+    text-align: center;
+}
+#text2 {
+    top: 155px;
+    right: 92.5px;
+    width: 100%;
+    height: 10px;
+    transform: rotate(90deg);
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.border-top,
+.border-bottom,
+.border-left,
 .border-right {
-    bottom: 600px;
-    left: 50px;
-    width: 1000px;
-    height: 10%;
-        background-color: rgb(140, 225, 90);
+    background-color: black;
     position: absolute;
 }
-.zelText {
-    top: 265px;
-    left: 0px;
-    transform: translateX(100%);
-    position: absolute;
+
+.border-top {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10px;
 }
-.Negr {
-    bottom: 317.85px;
-    left: 50px;
-    width: 1000px;
-    height: 30%;
-        background-color: black;
-    position: absolute;
+
+.border-bottom {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 10px;
 }
+
+.border-left {
+    top: 0;
+    left: 0;
+    width: 10px;
+    height: 100%;
+}
+
+.border-right {
+    top: 0;
+    right: 0;
+    width: 10px;
+    height: 100%;
+}
+
+.square-top,
+.square-right,
+.square-bottom,
+.square-left {
+    display: flex;
+    background-color: beige;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+}
+
+.square-right,
+.square-left {
+    width: 15px;
+    height: 125px;
+}
+
+.square-top,
+.square-bottom {
+    width: 125px;
+    height: 15px;
+}
+
+.square-top {
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.square-right {
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+}
+
+.square-bottom {
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.square-left {
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    transform: rotateZ(90);
+}
+
